@@ -39,5 +39,5 @@ public:
     }
 
     friend class Staff;  // Create Borrower class and make Staff a friend
-    friend class Admin;  // Commit 5: Allow Admin to view borrower stats via friendship
+    friend class Admin;  // Allow Admin to view borrower stats via friendship
 };
