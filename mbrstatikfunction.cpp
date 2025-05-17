@@ -14,7 +14,7 @@ public:
     void printAll();
 
     static void setNim(int pNim) { nim = pNim ; }   // Definisi function
-    static int getNim() { return nim; }           // Definisi function
+    static int getNim() { return nim ; }           // Definisi function
 
     mahasiswa(string pnama) : nama(pnama) { setID(); }
 };
