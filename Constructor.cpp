@@ -12,7 +12,7 @@ public:
     mahasiswa(int);                     // Constructor dengan parameter int
     mahasiswa(string) ;                  // Constructor dengan parameter string
     mahasiswa(int iNim, string iNama) ;   // Constructor dengan 2 parameter
-    void cetak();                        // Fungsi cetak
+    void cetak();                       // Fungsi cetak
 };
 
 // Implementasi konstruktor
