@@ -71,3 +71,16 @@ public:
 
     friend class Admin; //Implement Staff class and make Admin a friend
 };
+class Admin {
+public:
+    void viewStats(const Borrower &br, const Book &b) {
+        cout << "Stats - Borrower: " << br.name << ", Books borrowed: " << br.totalBorrowed << endl;
+        cout << "Book \"" << b.title << "\" is " << (b.isBorrowed ? "borrowed" : "available") << endl;
+    }
+
+    void updateAccessLevel(Staff &s, const string &newLevel) {
+        s.accessLevel = newLevel;
+        cout << "Updated access level for " << s.name << " to " << newLevel << endl;
+    }
+    // Implement Admin class to view stats and update access levels
+};
