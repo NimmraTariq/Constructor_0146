@@ -84,3 +84,9 @@ public:
     }
     // Implement Admin class to view stats and update access levels
 };
+int main() {
+    // Start main function and create sample objects
+    Book book1("Clean Code", "Robert C. Martin");
+    Borrower borrower1("Alice", 1001);
+    Staff staff1("Bob", 2001, "Standard");
+    Admin admin1;
