@@ -6,3 +6,11 @@ using namespace std;
 
 class Borrower;
 class Staff;
+
+// Declare class forward declarations
+
+class Book {
+private:
+    string title;
+    string author;
+    bool isBorrowed;
