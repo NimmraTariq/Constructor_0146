@@ -94,3 +94,13 @@ int main() {
     borrower1.showStatus();
     book1.displayInfo();
     // Test borrow flow and show borrower/book info
+    admin1.viewStats(borrower1, book1);
+    admin1.updateAccessLevel(staff1, "Senior");
+    // Test Admin viewing stats and updating access level
+
+    staff1.returnBook(book1, borrower1);
+    book1.displayInfo();
+    // Commit 11: Test return flow and display final book status
+
+    return 0;
+}
