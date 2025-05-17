@@ -17,7 +17,7 @@ public:
 
 // Implementasi konstruktor
 mahasiswa::mahasiswa() {
-    nim = 0;
+    nim = 0 ;
     nama = "";
 }
 
