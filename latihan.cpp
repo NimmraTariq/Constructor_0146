@@ -41,3 +41,33 @@ public:
     friend class Staff;  // Create Borrower class and make Staff a friend
     friend class Admin;  // Allow Admin to view borrower stats via friendship
 };
+class Staff {
+private:
+    string name;
+    int staffId;
+    string accessLevel;
+
+public:
+    Staff(string n, int i, string access) : name(n), staffId(i), accessLevel(access) {}
+
+    void borrowBook(Book &b, Borrower &br) {
+        if (!b.isBorrowed) {
+            b.isBorrowed = true;
+            br.totalBorrowed++;
+            cout << br.name << " borrowed \"" << b.title << "\"\n";
+        } else {
+            cout << "Book is already borrowed.\n";
+        }
+    }
+     void returnBook(Book &b, Borrower &br) {
+        if (b.isBorrowed) {
+            b.isBorrowed = false;
+            br.totalBorrowed--;
+            cout << br.name << " returned \"" << b.title << "\"\n";
+        } else {
+            cout << "Book was not borrowed.\n";
+        }
+    }
+
+    friend class Admin; //Implement Staff class and make Admin a friend
+};
