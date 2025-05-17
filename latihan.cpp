@@ -11,6 +11,7 @@ class Staff;
 
 class Book {
 private:
+friend class Admin;
     string title;
     string author;
     bool isBorrowed;
@@ -23,6 +24,7 @@ private:
     }
 
     friend class Staff; // Implement Book class with private status and friend Staff
+    friend class Admin;  // Allow Admin to view book status via friendship
 };
 class Borrower {
 private:
