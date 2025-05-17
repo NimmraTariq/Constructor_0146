@@ -90,3 +90,7 @@ int main() {
     Borrower borrower1("Alice", 1001);
     Staff staff1("Bob", 2001, "Standard");
     Admin admin1;
+    staff1.borrowBook(book1, borrower1);
+    borrower1.showStatus();
+    book1.displayInfo();
+    // Test borrow flow and show borrower/book info
